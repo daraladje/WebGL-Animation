@@ -1,0 +1,21 @@
+#version 300 es
+in vec3 vertPosition;
+in vec2 vTextCoord;
+in vec3 vertNormal;
+
+uniform vec3 eyepos;
+uniform mat4 modelMatrix;
+uniform mat4 perspectiveMatrix;
+uniform mat4 viewMatrix;
+
+out highp vec2 textCoord;
+out vec3 v_normal;
+out vec3 v_view;
+
+void main() {
+	v_normal = normalize( vec3( (transpose(inverse(modelMatrix))) * vec4( vertNormal,0.0) ) );
+	vec3 worldPos = ( modelMatrix * vec4(vertPosition, 1.0) ).xyz;
+	v_view = normalize( eyepos - worldPos );
+	gl_Position = perspectiveMatrix  * viewMatrix * vec4(worldPos, 1.0);
+	textCoord = vTextCoord;
+}

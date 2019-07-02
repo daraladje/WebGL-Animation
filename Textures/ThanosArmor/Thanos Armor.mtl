@@ -1,0 +1,72 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 09.05.2018 11:58:47
+
+newmtl wire_174186203
+	Ns 32
+	d 1
+	Tr 0
+	Tf 1 1 1
+	illum 2
+	Ka 0.6824 0.7294 0.7961
+	Kd 0.6824 0.7294 0.7961
+	Ks 0.3500 0.3500 0.3500
+
+newmtl Material__25
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.2700 0.2700 0.2700
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Home\Desktop\Models obj Marvel\ThanosXPS\T_M_LRG_Jim_Body_d.tga
+	map_Kd C:\Users\Home\Desktop\Models obj Marvel\ThanosXPS\T_M_LRG_Jim_Body_d.tga
+	map_bump Normal_Bump_Normal_Bump.tga
+
+newmtl Material__26
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.2700 0.2700 0.2700
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Home\Desktop\Models obj Marvel\ThanosXPS\T_M_LRG_JIM_Gauntlet_D.tga
+	map_Kd C:\Users\Home\Desktop\Models obj Marvel\ThanosXPS\T_M_LRG_JIM_Gauntlet_D.tga
+	map_bump Normal_Bump_Normal_Bump.tga
+
+newmtl Material__27
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.2700 0.2700 0.2700
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Home\Desktop\Models obj Marvel\ThanosXPS\T_M_LRG_Jim_Head_d.tga
+	map_Kd C:\Users\Home\Desktop\Models obj Marvel\ThanosXPS\T_M_LRG_Jim_Head_d.tga
+	map_bump Normal_Bump_Normal_Bump.tga
+
+newmtl Material__28
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.2700 0.2700 0.2700
+	Ke 0.0000 0.0000 0.0000
+	map_Ka C:\Users\Home\Desktop\Models obj Marvel\ThanosXPS\T_M_LRG_Jim_Helmet_d.tga
+	map_Kd C:\Users\Home\Desktop\Models obj Marvel\ThanosXPS\T_M_LRG_Jim_Helmet_d.tga
+	map_bump Normal_Bump_Normal_Bump.tga

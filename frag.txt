@@ -1,0 +1,44 @@
+#version 300 es
+precision mediump float;
+ 
+in vec3 v_normal; // Surface normal in world space.
+in vec2 textCoord;
+in vec3 v_view;
+ 
+uniform vec3 lightDir; // Light's position in world space.
+uniform vec3 lightColor; // Light's diffuse and specular contribution.
+ 
+uniform vec3 emissive;
+uniform vec3 diffuse;
+uniform vec3 specular;
+uniform float shine;
+ 
+uniform vec3 ambient; // Global ambient contribution.
+ 
+uniform sampler2D textureSampler;
+
+out vec4 fragOut_Color;
+
+void main()
+{
+
+	vec3 normal = normalize( v_normal );
+	vec3 view = normalize( v_view );
+	vec3 light = normalize( lightDir );
+
+	vec4 text = texture( textureSampler, textCoord );
+
+	vec3 refl = 2.0 * normal * dot( normal, light ) - light;
+	vec3 spec = pow( max( dot( refl, view ), 0.0 ), shine ) * specular * lightColor;
+	
+	vec3 ambi = ambient * lightColor; 
+
+	vec3 diff = diffuse * lightColor * max( dot( normal, light ), 0.0 );
+
+	fragOut_Color = vec4( diff + spec + ambi + emissive, 1.0 )*text;
+
+
+}
+
+
+

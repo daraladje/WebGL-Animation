@@ -1,0 +1,61 @@
+<style>
+  body, html {
+  height: 100%;
+}
+
+.bg { 
+  /* The image used */
+  background-image: url("Textures/sky.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#canvas-container {
+   width: 100%;
+   text-align:center;
+}
+
+canvas {
+   display: inline;
+}
+</style>
+
+<!DOCTYPE html>
+
+<html>
+<audio id="my_audio" muted="muted">
+  <source src="got.mp3" type="audio/mpeg">
+</audio>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/camera.js"></script>
+    <script src="js/initShade.js"></script>
+    <script src="js/gl-matrix.js"></script>
+    <script src="js/basicModelLibrary.js"></script>
+    <script src="./js/start.js"></script>
+        <audio id="audio" src="got.mp3" autoplay="false" ></audio>
+    <a onclick="playSound();"> Play</a>
+    <script>
+    function playSound() {
+          var sound = document.getElementById("audio");
+          sound.play();
+      }
+    </script>
+</head>
+
+<body onload="myMain();" class = "bg" >
+</audio>
+    <div id="canvas-container">
+    <canvas id="surface" width="1700" height="950" align = "middle">
+        if you see this you are hosed!!!
+    </canvas>
+    </div>
+</body>
+</html>
